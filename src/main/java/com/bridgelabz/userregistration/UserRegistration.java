@@ -9,4 +9,9 @@ public class UserRegistration {
 
         return Pattern.matches(FIRST_NAME_PATTERN, fname);
     }
+    String LAST_NAME_PATTERN = "^[A-Z]{1}[a-z]{2,}$";
+
+    public boolean validateLastName(String lname) {
+        return Pattern.matches(LAST_NAME_PATTERN, lname);
+    }
 }
