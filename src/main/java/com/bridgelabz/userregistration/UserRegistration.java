@@ -19,4 +19,9 @@ public class UserRegistration {
     public boolean validateEmail(String email) {
         return Pattern.matches(EMAIL_PATTERN, email);
     }
+    private static final String MOBILENUMBER_PATTERN = "^[1-9]{2}-[1-9]{1}[\\d]{9}";
+
+    public boolean validateMobileNumber(String mobileNumber) {
+        return Pattern.matches(MOBILENUMBER_PATTERN, mobileNumber);
+    }
 }
