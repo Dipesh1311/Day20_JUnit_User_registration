@@ -31,7 +31,7 @@ public class UserRegistrationTest {
     @Test
     public void testPassword8Chars_WhenProper_ShouldReturnTrue() {
         UserRegistration validator = new UserRegistration();
-        boolean result = validator.validatePassword("Dipeshra");
+        boolean result = validator.validatePassword("Jdipeshra");
         Assert.assertEquals(true, result);
     }
 }
