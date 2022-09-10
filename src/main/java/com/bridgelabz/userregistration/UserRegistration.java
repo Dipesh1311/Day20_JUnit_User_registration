@@ -14,4 +14,9 @@ public class UserRegistration {
     public boolean validateLastName(String lname) {
         return Pattern.matches(LAST_NAME_PATTERN, lname);
     }
+    private static final String EMAIL_PATTERN = "^[a-z]{3,}[.\\w]*@[\\w]{3,}.[\\w]{2,3}[.a-z]*$";
+
+    public boolean validateEmail(String email) {
+        return Pattern.matches(EMAIL_PATTERN, email);
+    }
 }
