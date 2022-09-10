@@ -29,5 +29,10 @@ public class UserRegistration {
     public boolean validatePassword(String password) {
         return Pattern.matches(PASSWORD_PATTERN, password);
     }
+    private static final String EMAIL_PATTERN2 = "^[a-z]{3,}[.\\w]*@[\\w]{3,}.[\\w]{2,3}[.a-z]*$";
+
+    public boolean validateEmail2(String email) {
+        return Pattern.matches(EMAIL_PATTERN, email);
+    }
 
 }

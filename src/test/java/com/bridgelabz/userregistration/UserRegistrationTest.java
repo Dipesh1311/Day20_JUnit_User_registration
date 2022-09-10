@@ -2,6 +2,10 @@ package com.bridgelabz.userregistration;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 public class UserRegistrationTest {
     @Test
@@ -34,4 +38,5 @@ public class UserRegistrationTest {
         boolean result = validator.validatePassword("Jdipe1@shra");
         Assert.assertEquals(true, result);
     }
+
 }
