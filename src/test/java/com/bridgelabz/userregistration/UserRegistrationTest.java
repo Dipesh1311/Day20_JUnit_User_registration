@@ -28,4 +28,10 @@ public class UserRegistrationTest {
         boolean result = validator.validateMobileNumber("91-7344428808");
         Assert.assertEquals(true, result);
     }
+    @Test
+    public void testPassword8Chars_WhenProper_ShouldReturnTrue() {
+        UserRegistration validator = new UserRegistration();
+        boolean result = validator.validatePassword("Dipeshra");
+        Assert.assertEquals(true, result);
+    }
 }

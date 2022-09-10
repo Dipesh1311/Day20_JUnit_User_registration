@@ -24,4 +24,9 @@ public class UserRegistration {
     public boolean validateMobileNumber(String mobileNumber) {
         return Pattern.matches(MOBILENUMBER_PATTERN, mobileNumber);
     }
+    private static final String PASSWORD_PATTERN = "^[a-zA-Z]{8,}$";
+
+    public boolean validatePassword(String password) {
+        return Pattern.matches(PASSWORD_PATTERN, password);
+    }
 }
