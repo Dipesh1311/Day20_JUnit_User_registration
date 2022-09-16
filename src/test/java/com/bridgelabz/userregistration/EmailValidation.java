@@ -31,7 +31,7 @@ public class EmailValidation {
     }
 
     @Test
-    public void testEmails_WhenProper_ShouldReturnTrue() {
+    public void testEmails_WhenProper_ShouldReturnTrue() throws InvalidUserDetailsException {
         UserRegistration userRegistration = new UserRegistration();
         Boolean result = userRegistration.validateEmail(arg);
         Assert.assertEquals(result, expectedValidation);
